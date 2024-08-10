@@ -8,6 +8,7 @@ Aplikasi deteksi ekspresi wajah yang menggunakan teknologi AI `Face++` untuk men
 - **Tampilkan Emosi**: Menampilkan emosi yang terdeteksi dalam bentuk label.
 - **Pengaturan API**: Integrasi dengan AI API `Face++` untuk analisis ekspresi wajah.
 - **Response Data Model Ekspresi Yang Dihasilkan**:
+
   - Marah
   - Jijik
   - Takut
@@ -121,15 +122,15 @@ Berikut adalah penjelasan mengenai beberapa dependensi utama yang digunakan dala
 
 4. **Setup .env**:
 
-    - Buat file bernama `.env` di direktori root backend dan isi dengan:
+    Buat file bernama `.env` di direktori root backend dan isi dengan:
 
-        ```bash
-        FACEPP_API_KEY=your_api_key
-        FACEPP_API_SECRET=Your_secret_api_key
-        MONGO_URI=mongodb://localhost:27017/Nama-Databasemu
-        PORT=3000
-        SECRET=abcdefghijklmnopqrstuvwxyz0123456789
-        ```
+    ```bash
+    FACEPP_API_KEY=your_api_key
+    FACEPP_API_SECRET=Your_secret_api_key
+    MONGO_URI=mongodb://localhost:27017/Nama-Databasemu
+    PORT=3000
+    SECRET=abcdefghijklmnopqrstuvwxyz0123456789
+    ```
 
 5. **Jalankan Program**:
 
@@ -212,7 +213,9 @@ Setelah mendapatkan token authorization `Bearer eyxxxxxx`, Anda dapat melakukan 
 Kami berharap aplikasi ini dapat membantu Anda dalam mendeteksi dan menganalisis ekspresi wajah dengan mudah. Jika Anda memiliki pertanyaan, umpan balik, atau ingin berkontribusi pada proyek ini, jangan ragu untuk membuka *issue* atau *pull request* di repository GitHub kami.
 
 - **Repository GitHub**: [Facial Expression Detection App](https://github.com/REY-STTP/Facial-Expression-Detection-App)
+
 - **Kontak**: 
+
   - <a href="mailto:rey.zakaria123@gmail.com">Email</a>
   - <a href="https://www.facebook.com/reyvaldi.zakaria.18" target="_blank" rel="noopener noreferrer">Facebook</a>
 
