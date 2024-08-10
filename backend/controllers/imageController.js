@@ -69,7 +69,7 @@ const getImageById = async (req, res) => {
     }
 
     try {
-        const image = await Image.findById(id)
+        const image = await Image.findOne({ _id: id, user_id: req.user._id })
 
         if (!image) {
             return res.status(404).json({ error: 'Gambar tidak ditemukan.' })
@@ -80,6 +80,7 @@ const getImageById = async (req, res) => {
         res.status(500).json({ error: 'Terjadi kesalahan pada server.', details: err.toString() })
     }
 }
+
 
 // POST a New Image
 const uploadImage = async (req, res) => {
