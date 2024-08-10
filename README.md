@@ -7,6 +7,14 @@ Aplikasi deteksi ekspresi wajah yang menggunakan teknologi AI `Face++` untuk men
 - **Deteksi Ekspresi Wajah**: Mendeteksi berbagai ekspresi wajah dari gambar yang diunggah.
 - **Tampilkan Emosi**: Menampilkan emosi yang terdeteksi dalam bentuk label.
 - **Pengaturan API**: Integrasi dengan AI API `Face++` untuk analisis ekspresi wajah.
+- **Response Data Model Ekspresi Yang Dihasilkan**:
+  - Marah
+  - Jijik
+  - Takut
+  - Bahagia
+  - Netral
+  - Sedih
+  - Terkejut
 
 ## Teknologi yang Digunakan
 
@@ -161,21 +169,21 @@ Berikut adalah penjelasan mengenai beberapa dependensi utama yang digunakan dala
     }
     ```
 
-- **Catatan**: Setelah login berhasil, Anda akan menerima token authorization. Simpan token ini untuk digunakan dalam permintaan API berikutnya.
+- **Catatan**: Setelah login berhasil, Anda akan menerima token authorization `Bearer eyxxxxxx`. Simpan token ini untuk digunakan dalam permintaan API berikutnya.
 
 ### 3. Operasi API Images
 
-Setelah mendapatkan token authorization, Anda dapat melakukan permintaan berikut pada endpoint `/api/images`:
+Setelah mendapatkan token authorization `Bearer eyxxxxxx`, Anda dapat melakukan permintaan berikut pada endpoint `/api/images`:
 
 1. **Get All Images**
     - **URL**: `http://localhost:3000/api/images/`
     - **Method**: `GET`
-    - **Authorization**: Pilih `Bearer Token` pada tab `Authorization` dan masukkan token yang didapatkan sebelumnya.
+    - **Authorization**: Pilih `Bearer Token` pada tab `Authorization` dan masukkan token yang didapatkan sebelumnya `Bearer eyxxxxxx`.
 
 2. **Get an Image by ID**
     - **URL**: `http://localhost:3000/api/images/123` (ganti `123` dengan ID gambar yang diinginkan)
     - **Method**: `GET`
-    - **Authorization**: Pilih `Bearer Token` pada tab `Authorization` dan masukkan token yang didapatkan sebelumnya.
+    - **Authorization**: Pilih `Bearer Token` pada tab `Authorization` dan masukkan token yang didapatkan sebelumnya `Bearer eyxxxxxx`.
 
 3. **Post an Image**
     - **URL**: `http://localhost:3000/api/images/`
@@ -183,19 +191,19 @@ Setelah mendapatkan token authorization, Anda dapat melakukan permintaan berikut
     - **Body**: Pilih `form-data` pada tab `Body`.
     - **Key**: `file`
     - **Value**: Pilih `File` dari dropdown, lalu unggah gambar wajah dari direktori penyimpanan laptop/PC Anda.
-    - **Authorization**: Pilih `Bearer Token` pada tab `Authorization` dan masukkan token yang didapatkan sebelumnya.
+    - **Authorization**: Pilih `Bearer Token` pada tab `Authorization` dan masukkan token yang didapatkan sebelumnya `Bearer eyxxxxxx`.
 
-4. **Delete an Image**
+4. **Delete an Image By ID**
     - **URL**: `http://localhost:3000/api/images/123` (ganti `123` dengan ID gambar yang ingin dihapus)
     - **Method**: `DELETE`
-    - **Authorization**: Pilih `Bearer Token` pada tab `Authorization` dan masukkan token yang didapatkan sebelumnya.
+    - **Authorization**: Pilih `Bearer Token` pada tab `Authorization` dan masukkan token yang didapatkan sebelumnya `Bearer eyxxxxxx`.
 
-5. **Patch an Image**
+5. **Patch an Image By ID**
     - **URL**: `http://localhost:3000/api/images/123` (ganti `123` dengan ID gambar yang ingin diperbarui)
     - **Method**: `PATCH`
     - **Body**: Pilih `form-data` atau `raw` sesuai dengan data yang akan diperbarui.
     - **Key**: Jika menggunakan `form-data`, tambahkan field sesuai dengan data yang ingin diperbarui.
-    - **Authorization**: Pilih `Bearer Token` pada tab `Authorization` dan masukkan token yang didapatkan sebelumnya.
+    - **Authorization**: Pilih `Bearer Token` pada tab `Authorization` dan masukkan token yang didapatkan sebelumnya `Bearer eyxxxxxx`.
 
 ## Penutup
 
@@ -204,6 +212,8 @@ Setelah mendapatkan token authorization, Anda dapat melakukan permintaan berikut
 Kami berharap aplikasi ini dapat membantu Anda dalam mendeteksi dan menganalisis ekspresi wajah dengan mudah. Jika Anda memiliki pertanyaan, umpan balik, atau ingin berkontribusi pada proyek ini, jangan ragu untuk membuka *issue* atau *pull request* di repository GitHub kami.
 
 - **Repository GitHub**: [Facial Expression Detection App](https://github.com/REY-STTP/Facial-Expression-Detection-App)
-- **Kontak**: rey.zakaria123@gmail.com
+- **Kontak**: 
+  - <a href="mailto:rey.zakaria123@gmail.com">Email</a>
+  - <a href="https://www.facebook.com/reyvaldi.zakaria.18" target="_blank" rel="noopener noreferrer">Facebook</a>
 
 Terima kasih atas dukungan dan kontribusi Anda!
